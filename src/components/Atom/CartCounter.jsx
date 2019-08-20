@@ -4,7 +4,7 @@ const CartCounter = ({cartLength})=>{
     return(<li><button className="button tiny ghost">{`Carrito:  ${cartLength.length}`}</button></li>);
 }
 
-const mapStateToProps = state =>({cartLength: state.cart})
+const mapStateToProps = state =>({cartLength: state.courseCarReducer.cart})
 
 const mapDispatchToProps = () => ({})
 

@@ -44,7 +44,7 @@ CourseCard.defaultProps = {
 
 
 
-const mapStateToProps = state => ({cart: state.cart});
+const mapStateToProps = state => ({cart: state.courseCarReducer.cart});
 const mapDispatchToProps =  dispatch => {
        return {
            addCursesToCard(id) {dispatch(addToCart(id))},
