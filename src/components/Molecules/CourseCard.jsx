@@ -33,14 +33,14 @@ CourseCard.propTypes = {
     image: PropTypes.string,
     price: PropTypes.number,
     profesor: PropTypes.string
-}
+};
 
 CourseCard.defaultProps = {
     title: "No se encontró título",
     image: "http://www.ciudaddelapunta.com/sitio/fotos/ciudad/miniaturas/006.jpg",
     price: "--",
     profesor: ""
-}
+};
 
 
 
