@@ -16,12 +16,12 @@ const courseCarReducer =  (state = initialStore, {type, id}) => {
         return {...state, cart: (state.cart.find((dato)=>dato===id)?state.cart.filter(e=>e!==id):state.cart)};
     }
     return state;
-}
+};
 
 const initialCourses = () =>
 {
     axios.get('http://my-json-server.typicode.com/betoquiroga/json-db/cursos').then(resp => resp.data)
-}
+};
 
 
 export default createStore(courseCarReducer, composeWithDevTools())

@@ -3,11 +3,12 @@ import "../styles/styles.scss"
 import AppRoutes from './AppRoutes';
 import {Provider} from 'react-redux'
 import CoursesStore from '../Redux/Strores/CoursesStore';
+import CoursesProvider from "../Context/CoursesProvider";
 
 const App = () => (
-  <Provider store={CoursesStore}>
+  <CoursesProvider>
     <AppRoutes/>
-  </Provider>
-  )
+  </CoursesProvider>
+  );
 
 export default App;
